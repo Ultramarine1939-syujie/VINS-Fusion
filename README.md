@@ -50,7 +50,7 @@ catkin_make
 
 **Monocualr camera + IMU**
 
-```bash
+```shell
 roslaunch vins vins_rviz.launch
 
 rosrun vins vins_node ~/vins-fusion/src/VINS-Fusion/config/euroc/euroc_mono_imu_config.yaml 
@@ -74,7 +74,7 @@ rosbag play ~/SLAM/test_data/MH_01_easy.bag
 
 **Stereo cameras**
 
-```
+```shell
 roslaunch vins vins_rviz.launch
 
 rosrun vins vins_node ~/vins-fusion/src/VINS-Fusion/config/euroc/euroc_stereo_config.yaml 
@@ -86,7 +86,7 @@ rosbag play ~/SLAM/test_data/MH_01_easy.bag
 
 **Stereo cameras + GPS**
 
-```
+```shell
 roslaunch vins vins_rviz.launch
 
 rosrun vins kitti_gps_test ~/catkin_ws/src/VINS-Fusion/config/kitti_raw/kitti_10_03_config.yaml YOUR_DATASET_FOLDER/2011_10_03_drive_0027_sync/ 
